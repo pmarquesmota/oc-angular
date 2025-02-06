@@ -4,7 +4,6 @@ default:
   before_script:
     - python3 -m pip install typer
     - npm ci --cache .npm --prefer-offline
-    - ./node_modules/.bin/ng serve
 
 stages:
   - build
