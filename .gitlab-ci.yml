@@ -19,7 +19,7 @@ build_application:
   stage: build
   script:
     - ./java-ci.py build
-    - cp dist/olympic-games-starter/* /app
+    - cp -rv dist/olympic-games-starter/* /app
   artifacts:
     paths:
       - dist/olympic-games-starter/*
