@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome Headless 133.0.0.0 (Mac OS 10.15.7)" package="" timestamp="2025-02-06T13:15:46" id="0" hostname="MacBookPro" tests="5" errors="0" failures="0" time="0.046">
+<testsuite name="Chrome Headless 133.0.0.0 (Mac OS 10.15.7)" package="" timestamp="2025-02-06T13:55:02" id="0" hostname="MacBookPro" tests="5" errors="0" failures="0" time="0.046">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/133.0.0.0 Safari/537.36"/>
   </properties>
-  <testcase name="NotFoundComponent should create" time="0.028" classname="Chrome_Headless_133_0_0_0_(Mac_OS_10_15_7).NotFoundComponent"/>
+  <testcase name="AppComponent should create the app" time="0.029" classname="Chrome_Headless_133_0_0_0_(Mac_OS_10_15_7).AppComponent"/>
+  <testcase name="AppComponent should have as title 'olympic-games-starter'" time="0.003" classname="Chrome_Headless_133_0_0_0_(Mac_OS_10_15_7).AppComponent"/>
   <testcase name="HomeComponent should create" time="0.011" classname="Chrome_Headless_133_0_0_0_(Mac_OS_10_15_7).HomeComponent"/>
-  <testcase name="OlympicService should be created" time="0.002" classname="Chrome_Headless_133_0_0_0_(Mac_OS_10_15_7).OlympicService"/>
-  <testcase name="AppComponent should create the app" time="0.003" classname="Chrome_Headless_133_0_0_0_(Mac_OS_10_15_7).AppComponent"/>
-  <testcase name="AppComponent should have as title 'olympic-games-starter'" time="0.002" classname="Chrome_Headless_133_0_0_0_(Mac_OS_10_15_7).AppComponent"/>
+  <testcase name="OlympicService should be created" time="0" classname="Chrome_Headless_133_0_0_0_(Mac_OS_10_15_7).OlympicService"/>
+  <testcase name="NotFoundComponent should create" time="0.003" classname="Chrome_Headless_133_0_0_0_(Mac_OS_10_15_7).NotFoundComponent"/>
   <system-out>
     <![CDATA[
 ]]>

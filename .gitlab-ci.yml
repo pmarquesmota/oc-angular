@@ -30,7 +30,7 @@ test_application:
     - ./java-ci.py test
   artifacts:
     reports:
-      junit: build/reports/tests/test/index.html
+      junit: reports/*.xml
 
 package_application:
   stage: package
