@@ -19,9 +19,10 @@ build_application:
   stage: build
   script:
     - ./java-ci.py build
+    - cp dist/olympic-games-starter/* /app
   artifacts:
     paths:
-      - build/*
+      - dist/olympic-games-starter/*
 
 test_application:
   stage: test
@@ -45,4 +46,6 @@ publish_application:
   stage: publish
   when: manual
   script:
+    - echo "@scope:registry=https://${CI_SERVER_HOST}/api/v4/projects/${CI_PROJECT_ID}/packages/npm/" > .npmrc
+    - echo "//${CI_SERVER_HOST}/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}" >> .npmrc
     - python3 ./java-ci.py publish

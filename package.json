@@ -1,5 +1,8 @@
 {
   "name": "@oc6493803/olympic-games-starter",
+  "publishConfig": {
+    "@oc6493803:registry": "https://gitlab.com/api/v4/projects/66218659/packages/npm/"
+  },
   "version": "0.1.3",
   "scripts": {
     "ng": "ng",
