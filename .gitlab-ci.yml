@@ -39,7 +39,7 @@ package_application:
   artifacts:
     name: ci-package-result
     paths:
-      - build/libs/*.war
+      - ./oc6493803-olympic-games-starter-*.tgz
     expire_in: 1 week
 
 publish_application:
