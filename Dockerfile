@@ -11,4 +11,4 @@ RUN --mount=type=cache,target=/var/cache/apk apk add nginx
 EXPOSE 4200
 COPY --from=builder /srv/nginx/nginx.conf /etc/nginx/
 COPY --from=builder /srv/dist/olympic-games-starter /srv
-RUN /usr/sbin/nginx
+ENTRYPOINT [ "/usr/sbin/nginx" ]
